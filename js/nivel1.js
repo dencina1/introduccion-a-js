@@ -150,9 +150,9 @@
 
 // TAREA: Crear una constante y mostrarla con un alert
 
-const IVA = 21
+/* const IVA = 21
 alert (IVA);
-
+ */
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
 
 
@@ -184,7 +184,11 @@ alert (IVA);
 // * 3ra variable llamada resultadoMultiplicacion que va a ser igual a
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
+/* let diez = 10;
+let tres = 3;
+resultadoMultiplicacion = diez * 3 
 
+console.log (resultadoMultiplicacion); */
 
 /*
     Funciones
@@ -241,14 +245,40 @@ alert (IVA);
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+function sumar (numero1, numero2) {
+    return numero1 + numero2;
+}
+console.log (sumar (1,10))
+
 
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
 
+function restar (numero1, numero2) {
+    return numero1 - numero2;
+}
+console.log (restar (5,1))
+
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
+
+/* let anioNacimiento = 1987;
+let anioActual = 2020;
+
+let miEdad = restar(anioActual, anioNacimiento);
+console.log ('Mi edad es ' + miEdad);
+ */
+//let edadUsuario = prompt ('Por favor ingrese su edad: ', )
+
+function saludar (nombre){
+    return 'Hola!' + nombre
+}
+
+let miNombre = prompt ('Cual es tu nombre?')
+console.log (saludar (miNombre));
+
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
 
