@@ -150,6 +150,8 @@
 
 // TAREA: Crear una constante y mostrarla con un alert
 
+const IVA = 21
+alert (IVA);
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
 
