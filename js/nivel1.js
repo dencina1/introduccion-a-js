@@ -245,7 +245,7 @@ console.log (resultadoMultiplicacion); */
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
-function sumar (numero1, numero2) {
+/* function sumar (numero1, numero2) {
     return numero1 + numero2;
 }
 console.log (sumar (1,10))
@@ -259,7 +259,7 @@ function restar (numero1, numero2) {
     return numero1 - numero2;
 }
 console.log (restar (5,1))
-
+ */
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
@@ -272,13 +272,13 @@ console.log ('Mi edad es ' + miEdad);
  */
 //let edadUsuario = prompt ('Por favor ingrese su edad: ', )
 
-function saludar (nombre){
+/* function saludar (nombre){
     return 'Hola!' + nombre
 }
 
 let miNombre = prompt ('Cual es tu nombre?')
 console.log (saludar (miNombre));
-
+ */
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
 
@@ -360,7 +360,15 @@ console.log (saludar (miNombre));
 //
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
+/* function sumar ( numero1, numero2) {
+    return numero1 + numero2;
+}
+console.log(sumar (12,6))
 
+function restar (numero1, numero2){
+    return numero1 - numero2;
+}
+console.log (restar (100,70)) */
 
 /*
     'If' - 'Else if' - 'Else'
@@ -391,8 +399,13 @@ console.log (saludar (miNombre));
 */
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
+function dividir(numero1, numero2){
+    return numero1 / numero2;
+}
 
-
+function multiplicar (numero1 * numero2){
+    return numero1 * numero2;
+}
 
 
 
@@ -402,8 +415,23 @@ console.log (saludar (miNombre));
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
 
+const operador = promt ('Ingrese operador (+,-, *,/)');
+const numero1 = 10;
+const numero2 = 2;
 
-
+let resultado;
+if (operador === '+'){
+    resultado = sumar (numero1, numero2);
+} else if (operador === '-'){
+    resultado = restar (numero1, numero2); 
+}else if (operador === '*'){
+    resultado = multiplicar (numero1, numero2);
+}else if (operador === '/'){
+    resultado =dividir (numero1, numero2)
+}else{
+   // console.log ('no entiendo el operador' + operador);
+    console.log (`No entiendo el operador ${operador}`)
+} 
 
 
 /*
