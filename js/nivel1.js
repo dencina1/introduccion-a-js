@@ -360,15 +360,14 @@ console.log (saludar (miNombre));
 //
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
-/* function sumar ( numero1, numero2) {
+
+function sumar (numero1, numero2) {
     return numero1 + numero2;
 }
-console.log(sumar (12,6))
 
 function restar (numero1, numero2){
     return numero1 - numero2;
 }
-console.log (restar (100,70)) */
 
 /*
     'If' - 'Else if' - 'Else'
@@ -399,11 +398,11 @@ console.log (restar (100,70)) */
 */
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
-function dividir(numero1, numero2){
+function dividir(numero1,numero2){
     return numero1 / numero2;
 }
 
-function multiplicar (numero1 * numero2){
+function multiplicar (numero1,numero2){
     return numero1 * numero2;
 }
 
@@ -415,7 +414,7 @@ function multiplicar (numero1 * numero2){
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
 
-const operador = promt ('Ingrese operador (+,-, *,/)');
+const operador = prompt ('Ingrese operador (+,-, *,/)');
 const numero1 = 10;
 const numero2 = 2;
 
@@ -427,11 +426,14 @@ if (operador === '+'){
 }else if (operador === '*'){
     resultado = multiplicar (numero1, numero2);
 }else if (operador === '/'){
-    resultado =dividir (numero1, numero2)
+    resultado = dividir (numero1, numero2)
 }else{
    // console.log ('no entiendo el operador' + operador);
-    console.log (`No entiendo el operador ${operador}`)
+    console.log (`No entiendo el operador ${operador}`);
 } 
+
+console.log (`El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`);
+
 
 
 /*
