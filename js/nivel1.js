@@ -468,3 +468,58 @@ console.log (`El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`
 // Felicitaciones! Terminaste el Nivel 1 de la introducción a JavaScript! //
 // El siguiente nivel es el que está en nivel2.js                         //
 ////////////////////////////////////////////////////////////////////////////
+
+/* 
+const operador = prompt ('Ingrese operador (+,-, *,/)');
+const numero1 = 10;
+const numero2 = 2;
+
+let resultado;
+if (operador === '+'){
+    resultado = sumar (numero1, numero2);
+} else if (operador === '-'){
+    resultado = restar (numero1, numero2); 
+}else if (operador === '*'){
+    resultado = multiplicar (numero1, numero2);
+}else if (operador === '/'){
+    resultado = dividir (numero1, numero2)
+}else{
+   // console.log ('no entiendo el operador' + operador);
+    console.log (`No entiendo el operador ${operador}`);
+} 
+
+console.log (`El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`);
+
+
+let resultado;
+if (operador === '+'){
+    resultado = sumar (numero1, numero2);
+} else if (operador === '-'){
+    resultado = restar (numero1, numero2); 
+}else if (operador === '*'){
+    resultado = multiplicar (numero1, numero2);
+}else if (operador === '/'){
+    resultado = dividir (numero1, numero2)
+}else{
+   // console.log ('no entiendo el operador' + operador);
+    console.log (`No entiendo el operador ${operador}`);
+} 
+ */
+
+
+
+
+let nombreUsuario = prompt ('HOla, ¿Como te llamas?');
+if (nombreUsuario === 'David'){
+    console.log ( `Hola Tocayo! Yo tambien me llamo ${nombreUsuario}`);
+}else if  (nombreUsuario === 'Vanesa' || nombreUsuario ==='Myriam'){
+    console.log (`Hola ${nombreUsuario} te llamas igual que mi hermana!`);
+}else console.log (`Hola ${nombreUsuario}!`);
+
+
+let edadUsuario = prompt ('HOla, que edad tenes?');
+if (edadUsuario === 37){
+    console.log ('Tenemos la misma edad!!')
+} else if (edadUsuario < 37){
+    console.log ('Tenes menos edad que Yó')
+} else console.log ('Tenes mas edad que Yó') 
