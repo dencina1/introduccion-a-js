@@ -42,7 +42,7 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
-
+const comidasFavoritas = ['milanesa', 'churrasco', 'pureDePapa' ]
 
 
 
@@ -65,7 +65,7 @@
 // imprimi utilizando console.log el resultado.
 
 
-
+console.log (comidasFavoritas.length);
 
 
 
@@ -90,6 +90,7 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
+console.log (comidasFavoritas[2]);
 
 
 
@@ -116,7 +117,7 @@
 // con cualquier otra cosa.
 
 
-
+comidasFavoritas[0] = "Helado"
 
 
 
@@ -124,7 +125,7 @@
 
 
 
-
+console.log (comidasFavoritas);
 
 
 // TIP: ¡No te olvides que las posiciones de índice comienzan desde 0!
@@ -146,6 +147,7 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
+comidasFavoritas.push ('Calzone')
 
 
 
@@ -153,10 +155,7 @@
 
 // TAREA: console.log todo el array para verificar.
 
-
-
-
-
+console.log(comidasFavoritas)
 
 /*
     Nota acerca Arrays constantes
@@ -181,11 +180,13 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
+const a = [1,2,3];
+console.log (a);
+a[0] = 4;
+console.log(a);
 
 
-
-
-
+/* a = [1,2,3]; //No puedo asignarle nuevos valores a una constante por mas que tenga los mismos valores.  */
 
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
 //       con notación de corchetes (array[1]) y
@@ -243,10 +244,21 @@
     }
 */
 
+let numero = 0; 
+
+while (numero < 10) {
+    numero += 1;
+    //numero = numero + 1;
+   // numero +=1; -> es lo mismo que la anterior
+   // idem numero++; -> idem, es lo mismo que la anterior
+}
+console.log (numero);
+
+
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-
+//TAREA A HACER
 
 
 
@@ -266,9 +278,28 @@
     }
 */
 
+let i;
+for (i = 0; i <= 5; i++) {
+    console.log ('hola!'+i);
+}
+/* let i;
+for (i = 10; i > 0; i--) {
+    console.log ('hola!'+i);
+}
+ */
+
+
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
+//tarea
 
+//Ejercicio
+const notaParciales = [10, 4, 5, 6];
+let totalNotas = 0;
+for (let i=0; i < notaParciales.length; i++){
+    totalNotas = totalNotas + notaParciales[i];
+}
 
+console.log ('El promedio es ' + totalNotas / notaParciales.length)
 
 
 
